@@ -62,4 +62,28 @@
     
   </entry>
   
+  <entry>
+    <title>网易歌单</title>
+    <link href="http://yoursite.com/2015/08/04/wangyi-playlist/"/>
+    <id>http://yoursite.com/2015/08/04/wangyi-playlist/</id>
+    <published>2015-08-04T05:24:29.000Z</published>
+    <updated>2016-03-27T09:08:43.036Z</updated>
+    
+    <content type="html">&lt;p&gt;现在才知道markdown支持网易外链，直接将iframe代码放进markdown文件就可以了，宽度和高度可以自由设置。&lt;/p&gt;
+&lt;hr&gt;
+&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;100%&quot; height=&quot;400&quot; src=&quot;http://music.163.com/outchain/player?type=0&amp;id=87100629&amp;auto=0&amp;height=430&quot;&gt;&lt;/iframe&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;现在才知道markdown支持网易外链，直接将iframe代码放进markdown文件就可以了，宽度和高度可以自由设置。&lt;/p&gt;
+&lt;hr&gt;
+&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0
+    
+    </summary>
+    
+    
+      <category term="markdown" scheme="http://yoursite.com/tags/markdown/"/>
+    
+  </entry>
+  
 </feed>
