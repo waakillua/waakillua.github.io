@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-28T04:49:22.653Z</updated>
+  <updated>2016-03-28T07:17:46.712Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,49 +16,32 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>测试</title>
-    <link href="http://yoursite.com/2016/03/27/my-new-post/"/>
-    <id>http://yoursite.com/2016/03/27/my-new-post/</id>
-    <published>2016-03-27T08:16:02.000Z</published>
-    <updated>2016-03-28T04:49:22.653Z</updated>
+    <title>用Github+Hexo搭建静态博客</title>
+    <link href="http://yoursite.com/2016/03/28/git/"/>
+    <id>http://yoursite.com/2016/03/28/git/</id>
+    <published>2016-03-28T06:12:26.000Z</published>
+    <updated>2016-03-28T07:17:46.712Z</updated>
     
-    <content type="html">&lt;p&gt;#正文&lt;/p&gt;
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;听说github可以做各种好玩的事情，还可以搭博客。之前的博客是用SEA的wordpress搭的，很多不尽人意的地方，一直懒得去改。还是希望可以有一个记录自己学习成长生活的地方，所以这两天就用hexo+github初步搭了一个博客，搭的过程还是遇到了不少问题，之后可能也会遇到一些问题。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;学习过程&quot;&gt;&lt;a href=&quot;#学习过程&quot; class=&quot;headerlink&quot; title=&quot;学习过程&quot;&gt;&lt;/a&gt;学习过程&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;廖雪峰老师的Git教程&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://liamchzh.0fees.net/?p=218&amp;amp;ckattempt=1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;使用git提交到github&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://wsgzao.github.io/post/hexo-guide/#&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;使用Github和Hexo搭建免费静态Blog&lt;/a&gt;&lt;br&gt;用七牛云做图床&lt;br&gt;&lt;a href=&quot;https://segmentfault.com/q/1010000004170119?_ea=515067&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;中文乱码问题&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;感谢@旗木君&lt;/p&gt;
+&lt;/blockquote&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;#正文&lt;/p&gt;
-
+      &lt;blockquote&gt;
+&lt;p&gt;听说github可以做各种好玩的事情，还可以搭博客。之前的博客是用SEA的wordpress搭的，很多不尽人意的地方，一直懒得去改。还是希望可以有一个记录自己学习成长生活的地方，所以这两天就用hexo+github初步搭了一个博客，搭的过程还是遇到
     
     </summary>
     
     
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2016/03/27/hello-world/"/>
-    <id>http://yoursite.com/2016/03/27/hello-world/</id>
-    <published>2016-03-27T02:24:30.862Z</published>
-    <updated>2016-03-27T02:24:30.893Z</updated>
+      <category term="github" scheme="http://yoursite.com/tags/github/"/>
     
-    <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Generate-static-files&quot;&gt;&lt;a href=&quot;#Generate-static-files&quot; class=&quot;headerlink&quot; title=&quot;Generate static files&quot;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/generating.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Deploy-to-remote-sites&quot;&gt;&lt;a href=&quot;#Deploy-to-remote-sites&quot; class=&quot;headerlink&quot; title=&quot;Deploy to remote sites&quot;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/deployment.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-    
-    </summary>
-    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
   </entry>
   
