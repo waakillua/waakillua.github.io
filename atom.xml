@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-28T07:17:46.712Z</updated>
+  <updated>2016-03-28T07:49:45.347Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,12 +20,14 @@
     <link href="http://yoursite.com/2016/03/28/git/"/>
     <id>http://yoursite.com/2016/03/28/git/</id>
     <published>2016-03-28T06:12:26.000Z</published>
-    <updated>2016-03-28T07:17:46.712Z</updated>
+    <updated>2016-03-28T07:49:45.347Z</updated>
     
-    <content type="html">&lt;blockquote&gt;
-&lt;p&gt;听说github可以做各种好玩的事情，还可以搭博客。之前的博客是用SEA的wordpress搭的，很多不尽人意的地方，一直懒得去改。还是希望可以有一个记录自己学习成长生活的地方，所以这两天就用hexo+github初步搭了一个博客，搭的过程还是遇到了不少问题，之后可能也会遇到一些问题。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;学习过程&quot;&gt;&lt;a href=&quot;#学习过程&quot; class=&quot;headerlink&quot; title=&quot;学习过程&quot;&gt;&lt;/a&gt;学习过程&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;廖雪峰老师的Git教程&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://liamchzh.0fees.net/?p=218&amp;amp;ckattempt=1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;使用git提交到github&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://wsgzao.github.io/post/hexo-guide/#&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;使用Github和Hexo搭建免费静态Blog&lt;/a&gt;&lt;br&gt;用七牛云做图床&lt;br&gt;&lt;a href=&quot;https://segmentfault.com/q/1010000004170119?_ea=515067&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;中文乱码问题&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;听说github可以做各种好玩的事情，还可以搭博客。之前的博客是用SEA的wordpress搭的，很多不尽人意的地方，一直懒得去改。还是希望可以有一个记录自己学习成长生活的地方，所以这两天就用hexo+github初步搭了一个博客，搭的过程还是遇到了不少问题，之后可能也会遇到一些问题。先这样吧~&lt;/p&gt;
+&lt;h3 id=&quot;学习过程&quot;&gt;&lt;a href=&quot;#学习过程&quot; class=&quot;headerlink&quot; title=&quot;学习过程&quot;&gt;&lt;/a&gt;学习过程&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;廖雪峰老师的Git教程&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://liamchzh.0fees.net/?p=218&amp;amp;ckattempt=1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;使用git提交到github&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://wsgzao.github.io/post/hexo-guide/#&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;使用Github和Hexo搭建免费静态Blog&lt;/a&gt;&lt;br&gt;用七牛云做图床&lt;br&gt;&lt;a href=&quot;https://segmentfault.com/q/1010000004170119?_ea=515067&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;中文乱码问题&lt;/a&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;p-s&quot;&gt;&lt;a href=&quot;#p-s&quot; class=&quot;headerlink&quot; title=&quot;p.s.&quot;&gt;&lt;/a&gt;p.s.&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;之前一直depoly出错，应该也是编码的问题，换sublime text编辑就depoly成功了&lt;/li&gt;
+&lt;li&gt;markdown用起来感觉真不错&lt;/li&gt;
+&lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;感谢@旗木君&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -33,8 +35,8 @@
     
     <summary type="html">
     
-      &lt;blockquote&gt;
-&lt;p&gt;听说github可以做各种好玩的事情，还可以搭博客。之前的博客是用SEA的wordpress搭的，很多不尽人意的地方，一直懒得去改。还是希望可以有一个记录自己学习成长生活的地方，所以这两天就用hexo+github初步搭了一个博客，搭的过程还是遇到
+      &lt;p&gt;听说github可以做各种好玩的事情，还可以搭博客。之前的博客是用SEA的wordpress搭的，很多不尽人意的地方，一直懒得去改。还是希望可以有一个记录自己学习成长生活的地方，所以这两天就用hexo+github初步搭了一个博客，搭的过程还是遇到了不少问题，之后可能也会遇到一些问题。先这样吧~&lt;/p&gt;
+&lt;h3 id=&quot;学习过程&quot;&gt;&lt;a href=&quot;#学习过程&quot; class=&quot;headerlink&quot; title=&quot;学习过程&quot;&gt;&lt;/a&gt;学习过程&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000&quot;&gt;廖雪峰老师的Git教程&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://liamchzh.0fees.net/?p=218&amp;amp;ckattempt=1&quot;&gt;使用git提交到github&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://wsgzao.github.io/post/hexo-guide/#&quot;&gt;使用Github和Hexo搭建免费静态Blog&lt;/a&gt;&lt;br&gt;用七牛云做图床&lt;br&gt;&lt;a href=&quot;https://segmentfault.com/q/1010000004170119?_ea=515067&quot;&gt;中文乱码问题&lt;/a&gt;&lt;br&gt;
     
     </summary>
     
