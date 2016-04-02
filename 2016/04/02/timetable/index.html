@@ -9,7 +9,7 @@
   <meta name="description" content="历时半个月的微课表终于接近尾声啦 虽然是一个小小的课表，还是感觉收获很多。 我的第一个小小项目，耶。 从页面设计到颜色搭配到页面实现到数据交互，从sunlime text 到webstrom到caddy（额，当然这个到代表的过程只有我自己能理解=。=）, 感觉自己在慢慢成长，嗯，这就够啦。 开心就好。 我就是我，是颜色不一样的小猪。
 
 
-1. 获取文本长度var a = $(this).cont">
+1. 获取文本长度1var a = $(this).con">
 <meta property="og:type" content="article">
 <meta property="og:title" content="微课表小结">
 <meta property="og:url" content="http://yoursite.com/2016/04/02/timetable/index.html">
@@ -17,14 +17,14 @@
 <meta property="og:description" content="历时半个月的微课表终于接近尾声啦 虽然是一个小小的课表，还是感觉收获很多。 我的第一个小小项目，耶。 从页面设计到颜色搭配到页面实现到数据交互，从sunlime text 到webstrom到caddy（额，当然这个到代表的过程只有我自己能理解=。=）, 感觉自己在慢慢成长，嗯，这就够啦。 开心就好。 我就是我，是颜色不一样的小猪。
 
 
-1. 获取文本长度var a = $(this).cont">
-<meta property="og:updated_time" content="2016-04-02T08:23:48.732Z">
+1. 获取文本长度1var a = $(this).con">
+<meta property="og:updated_time" content="2016-04-02T09:46:57.811Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="微课表小结">
 <meta name="twitter:description" content="历时半个月的微课表终于接近尾声啦 虽然是一个小小的课表，还是感觉收获很多。 我的第一个小小项目，耶。 从页面设计到颜色搭配到页面实现到数据交互，从sunlime text 到webstrom到caddy（额，当然这个到代表的过程只有我自己能理解=。=）, 感觉自己在慢慢成长，嗯，这就够啦。 开心就好。 我就是我，是颜色不一样的小猪。
 
 
-1. 获取文本长度var a = $(this).cont">
+1. 获取文本长度1var a = $(this).con">
   
     <link rel="alternative" href="/atom.xml" title="Wakillua&#39;s blog" type="application/atom+xml">
   
@@ -87,7 +87,7 @@
 						<li>Links</li>
 						
 						
-						<li>About</li>
+						<li>Über</li>
 						
 					</ul>
 				</div>
@@ -228,80 +228,30 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<p>历时半个月的微课表终于接近尾声啦<br><br> 虽然是一个小小的课表，还是感觉收获很多。<br> 我的第一个小小项目，耶。<br><br> 从页面设计到颜色搭配到页面实现到数据交互，从sunlime text 到webstrom到caddy（额，当然这个到代表的过程只有我自己能理解=。=）,<br> 感觉自己在慢慢成长，嗯，这就够啦。<br><br> 开心就好。<br><br> 我就是我，是颜色不一样的小猪。<br></p>
+<p>历时半个月的微课表终于接近尾声啦<br> 虽然是一个小小的课表，还是感觉收获很多。<br> 我的第一个小小项目，耶。<br> 从页面设计到颜色搭配到页面实现到数据交互，从sunlime text 到webstrom到caddy（额，当然这个到代表的过程只有我自己能理解=。=）,<br> 感觉自己在慢慢成长，嗯，这就够啦。<br> 开心就好。<br> 我就是我，是颜色不一样的小猪。</p>
 </blockquote>
 <hr>
-<h4 id="1-获取文本长度"><a href="#1-获取文本长度" class="headerlink" title="1. 获取文本长度"></a>1. 获取文本长度</h4><pre><code>var a = $(this).context.innerText.length;
-</code></pre><h4 id="2-改变表格第一列样式"><a href="#2-改变表格第一列样式" class="headerlink" title="2. 改变表格第一列样式"></a>2. 改变表格第一列样式</h4><pre><code>$(&quot;tr&quot;).each(function(){
-       $(this).find(&quot;td&quot;).first().css(&quot;color&quot;,&quot;black&quot;);
-       });
-</code></pre><h4 id="3-点击图片更换背景并用cookie保存"><a href="#3-点击图片更换背景并用cookie保存" class="headerlink" title="3. 点击图片更换背景并用cookie保存"></a>3. 点击图片更换背景并用cookie保存</h4><pre><code>$(&quot;.gooey-menu-item&quot;).click(function(){
-    var temp=$(this).css(&apos;backgroundImage&apos;);   
-    var strArr = temp.split(&apos;/&apos;);
-        var tem=strArr[strArr.length-1].substring(0,strArr[strArr.length-1].length-2);//获取到图片名
-    $(&quot;.blacktab&quot;).css({&quot;backgroundImage&quot;:&quot;url(&quot;+tem+&quot;)&quot;})
-    $.cookie(&quot;background&quot;,tem,{expires:7});
-});
-var tem=$.cookie(&quot;background&quot;);
-if(tem!=null){
-    $(&quot;.blacktab&quot;).css({&quot;backgroundImage&quot;:&quot;url(&quot;+tem+&quot;)&quot;})
- }
-</code></pre><h4 id="4-与后台数据交互"><a href="#4-与后台数据交互" class="headerlink" title="4. 与后台数据交互"></a>4. 与后台数据交互</h4><pre><code>$.getJSON(&apos;callback.js&apos;,function(data){
-    var jieArray=new Array();
-    var charArray=new Array(11);
-    for(var i=0;i&lt;11;i++){
-        jieArray[i]=new Array();
-        for(var j=0;j&lt;7;j++){
-            jieArray[i][j]=&apos;&lt;td width=\&quot;14%\&quot;&gt;&lt;/td&gt;&apos;;
-        }
-    }
-    $.each(data,function(i,v){
-        var classNode=v.classNode-1;
-        var weekNode=v.week-1;
-        var className;
-        var a=v.courseContent.length
-        switch(true){
-            case 21:
-            className=&apos;two&apos;;
-               break;
-        }
-        jieArray[classNode][weekNode]=&quot;&lt;td width=\&quot;14%\&quot; rowspan=\&quot;&quot;+ v.classHourLength+&quot;\&quot; class=\&quot;&quot;+className+&quot;\&quot;&gt;&quot;+ v.courseContent+&quot;&lt;/td&gt;&quot;;
-          for(var k=1;k&lt;v.classHourLength;k++){
-            jieArray[classNode+k][weekNode]=&quot;&quot;;
-        }
-    });
-    for(i=0;i&lt;11;i++){
-        charArray[i]=&quot;&lt;tr&gt;&lt;td width=\&quot;2%\&quot;&gt;第&quot;+(i+1)+&quot;节&lt;/td&gt;&quot;+jieArray[i].join(&apos; &apos;)+&quot;&lt;/td&gt;&quot;;
-    }
-    $(&quot;#classTable&quot;).html(charArray.join(&apos;&apos;));
-})
-</code></pre><a id="more"></a>
+<h4 id="1-获取文本长度"><a href="#1-获取文本长度" class="headerlink" title="1. 获取文本长度"></a>1. 获取文本长度</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = $(<span class="keyword">this</span>).context.innerText.length;</span><br></pre></td></tr></table></figure>
+<h4 id="2-改变表格第一列样式"><a href="#2-改变表格第一列样式" class="headerlink" title="2. 改变表格第一列样式"></a>2. 改变表格第一列样式</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"tr"</span>).each(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">       $(<span class="keyword">this</span>).find(<span class="string">"td"</span>).first().css(<span class="string">"color"</span>,<span class="string">"black"</span>);</span><br><span class="line">       &#125;);</span><br></pre></td></tr></table></figure>
+<h4 id="3-点击图片更换背景并用cookie保存"><a href="#3-点击图片更换背景并用cookie保存" class="headerlink" title="3. 点击图片更换背景并用cookie保存"></a>3. 点击图片更换背景并用cookie保存</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">".gooey-menu-item"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">var</span> temp=$(<span class="keyword">this</span>).css(<span class="string">'backgroundImage'</span>);</span><br><span class="line">   	<span class="keyword">var</span> strArr = temp.split(<span class="string">'/'</span>);</span><br><span class="line">  	 	<span class="keyword">var</span> tem=strArr[strArr.length<span class="number">-1</span>].substring(<span class="number">0</span>,strArr[strArr.length<span class="number">-1</span>].length<span class="number">-2</span>);<span class="comment">//获取到图片名</span></span><br><span class="line">   	$(<span class="string">".blacktab"</span>).css(&#123;<span class="string">"backgroundImage"</span>:<span class="string">"url("</span>+tem+<span class="string">")"</span>&#125;)</span><br><span class="line">	$.cookie(<span class="string">"background"</span>,tem,&#123;expires:<span class="number">7</span>&#125;);</span><br><span class="line">&#125;);</span><br><span class="line">   <span class="keyword">var</span> tem=$.cookie(<span class="string">"background"</span>);</span><br><span class="line"><span class="keyword">if</span>(tem!=<span class="literal">null</span>)&#123;</span><br><span class="line">   	$(<span class="string">".blacktab"</span>).css(&#123;<span class="string">"backgroundImage"</span>:<span class="string">"url("</span>+tem+<span class="string">")"</span>&#125;)</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h4 id="4-与后台数据交互"><a href="#4-与后台数据交互" class="headerlink" title="4. 与后台数据交互"></a>4. 与后台数据交互</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">$.getJSON(<span class="string">'callback.js'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> jieArray=<span class="keyword">new</span> <span class="built_in">Array</span>();</span><br><span class="line">    <span class="keyword">var</span> charArray=<span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">11</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;<span class="number">11</span>;i++)&#123;</span><br><span class="line">        jieArray[i]=<span class="keyword">new</span> <span class="built_in">Array</span>();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> j=<span class="number">0</span>;j&lt;<span class="number">7</span>;j++)&#123;</span><br><span class="line">            jieArray[i][j]=<span class="string">'&lt;td width=\"14%\"&gt;&lt;/td&gt;'</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    $.each(data,<span class="function"><span class="keyword">function</span>(<span class="params">i,v</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> classNode=v.classNode<span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">var</span> weekNode=v.week<span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">var</span> className;</span><br><span class="line">        <span class="keyword">var</span> a=v.courseContent.length</span><br><span class="line">        <span class="keyword">switch</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">21</span>:</span><br><span class="line">            className=<span class="string">'two'</span>;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        jieArray[classNode][weekNode]=<span class="string">"&lt;td width=\"14%\" rowspan=\""</span>+ v.classHourLength+<span class="string">"\" class=\""</span>+className+<span class="string">"\"&gt;"</span>+ v.courseContent+<span class="string">"&lt;/td&gt;"</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> k=<span class="number">1</span>;k&lt;v.classHourLength;k++)&#123;</span><br><span class="line">            jieArray[classNode+k][weekNode]=<span class="string">""</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">11</span>;i++)&#123;</span><br><span class="line">        charArray[i]=<span class="string">"&lt;tr&gt;&lt;td width=\"2%\"&gt;第"</span>+(i+<span class="number">1</span>)+<span class="string">"节&lt;/td&gt;"</span>+jieArray[i].join(<span class="string">' '</span>)+<span class="string">"&lt;/td&gt;"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    $(<span class="string">"#classTable"</span>).html(charArray.join(<span class="string">''</span>));</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 <h4 id="5-弹性菜单封装"><a href="#5-弹性菜单封装" class="headerlink" title="5. 弹性菜单封装"></a>5. 弹性菜单封装</h4><h4 id="6-移动端调试"><a href="#6-移动端调试" class="headerlink" title="6. 移动端调试"></a>6. 移动端调试</h4><blockquote>
 <p>在我以为所以的工作都完成就等发布到服务器时，大boss才来临。<br>  手机里的界面真是没眼看……<br>  而且不同手机显示的界面不一样，不同浏览器显示的界面也不一样，要哭了好嘛。<br><br>  但问题既然存在就要解决</p>
 </blockquote>
 <ul>
 <li><h5 id="远程调试工具caddy-exe"><a href="#远程调试工具caddy-exe" class="headerlink" title="远程调试工具caddy.exe"></a>远程调试工具caddy.exe</h5>电脑和手机在同一个网域（连同一个wifi）就可以在手机查看效果啦</li>
-<li><h5 id="添加头部meta标签"><a href="#添加头部meta标签" class="headerlink" title="添加头部meta标签"></a>添加头部meta标签</h5><pre><code>meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0, maximum-scale=1, user-scalable=no&quot;
-</code></pre></li>
+<li><h5 id="添加头部meta标签"><a href="#添加头部meta标签" class="headerlink" title="添加头部meta标签"></a>添加头部meta标签</h5><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1, user-scalable=no"</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
 <ul>
 <li><h5 id="将所有的px都改成rem并使用-media"><a href="#将所有的px都改成rem并使用-media" class="headerlink" title="将所有的px都改成rem并使用@media"></a>将所有的px都改成rem并使用@media</h5></li>
 <li><h5 id="css背景固定属性background-attachment-fixed在手机端不起作用"><a href="#css背景固定属性background-attachment-fixed在手机端不起作用" class="headerlink" title="css背景固定属性background-attachment:fixed在手机端不起作用"></a>css背景固定属性background-attachment:fixed在手机端不起作用</h5><p>解决：hack一下。想在哪个标签加背景，可以在它class后:before.</p>
-<pre><code>body:before {
-      content: &apos; &apos;;
-      position: fixed;
-      z-index: -1;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background: url(path/to/image) center 0 no-repeat;
-      background-size: cover;
-}
-</code></pre></li>
-<li><h6 id="一个更换背景图片的皮肤按钮（position-fixed-）在微信里打开木有显示，但是用魅族自带浏览器打开可以显示，舍友手机微信打开也可显示。"><a href="#一个更换背景图片的皮肤按钮（position-fixed-）在微信里打开木有显示，但是用魅族自带浏览器打开可以显示，舍友手机微信打开也可显示。" class="headerlink" title="一个更换背景图片的皮肤按钮（position:fixed;）在微信里打开木有显示，但是用魅族自带浏览器打开可以显示，舍友手机微信打开也可显示。"></a>一个更换背景图片的皮肤按钮（position:fixed;）在微信里打开木有显示，但是用魅族自带浏览器打开可以显示，舍友手机微信打开也可显示。</h6><pre><code>暂时无解。
-</code></pre><hr>
-<p>代码之后会上传到github.</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span><span class="selector-pseudo">:before</span> &#123;</span><br><span class="line">  	<span class="attribute">content</span>: <span class="string">' '</span>;</span><br><span class="line">  	<span class="attribute">position</span>: fixed;</span><br><span class="line">  	<span class="attribute">z-index</span>: -<span class="number">1</span>;</span><br><span class="line">  	<span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line"> 	<span class="attribute">right</span>: <span class="number">0</span>;</span><br><span class="line">  	<span class="attribute">bottom</span>: <span class="number">0</span>;</span><br><span class="line">  	<span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">  	<span class="attribute">background</span>: <span class="built_in">url</span>(path/to/image) center <span class="number">0</span> no-repeat;</span><br><span class="line">  	<span class="attribute">background-size</span>: cover;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><h6 id="一个更换背景图片的皮肤按钮（position-fixed-）在微信里打开木有显示，但是用魅族自带浏览器打开可以显示，舍友手机微信打开也可显示。"><a href="#一个更换背景图片的皮肤按钮（position-fixed-）在微信里打开木有显示，但是用魅族自带浏览器打开可以显示，舍友手机微信打开也可显示。" class="headerlink" title="一个更换背景图片的皮肤按钮（position:fixed;）在微信里打开木有显示，但是用魅族自带浏览器打开可以显示，舍友手机微信打开也可显示。"></a>一个更换背景图片的皮肤按钮（position:fixed;）在微信里打开木有显示，但是用魅族自带浏览器打开可以显示，舍友手机微信打开也可显示。</h6><p>暂时无解。</p>
+<hr>
+<p>第一次贴代码的我我我,meta标签还是没颜色=。=<br>代码之后会上传到github.</p>
 </li>
 </ul>
 
