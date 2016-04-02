@@ -182,6 +182,129 @@
 
       <div class="body-wrap">
   
+    <article id="post-timetable" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/02/timetable/" class="article-date">
+  	<time datetime="2016-04-02T07:08:37.861Z" itemprop="datePublished">2016-04-02</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<p>title: 微课表小结<br>date: 2016-04-02 15:08:37<br>tags:<br>—前端</p>
+<p>####1. 获取文本长度<br>     var a = $(this).context.innerText.length;</p>
+<p>####2. 改变表格第一列样式<br>    $(“tr”).each(function(){<br>           $(this).find(“td”).first().css(“color”,”black”);<br>           });</p>
+<p>####3. 点击图片更换背景并用cookie保存</p>
+<pre><code>$(&quot;.gooey-menu-item&quot;).click(function(){
+    var temp=$(this).css(&apos;backgroundImage&apos;);   
+    var strArr = temp.split(&apos;/&apos;);
+        var tem=strArr[strArr.length-1].substring(0,strArr[strArr.length-1].length-2);//获取到图片名
+    $(&quot;.blacktab&quot;).css({&quot;backgroundImage&quot;:&quot;url(&quot;+tem+&quot;)&quot;})
+    $.cookie(&quot;background&quot;,tem,{expires:7});
+});
+var tem=$.cookie(&quot;background&quot;);
+if(tem!=null){
+    $(&quot;.blacktab&quot;).css({&quot;backgroundImage&quot;:&quot;url(&quot;+tem+&quot;)&quot;})
+ }
+</code></pre><p>####4. 与后台数据交互</p>
+<pre><code>$.getJSON(&apos;callback.js&apos;,function(data){
+    var jieArray=new Array();
+    var charArray=new Array(11);
+    for(var i=0;i&lt;11;i++){
+        jieArray[i]=new Array();
+        for(var j=0;j&lt;7;j++){
+            jieArray[i][j]=&apos;&lt;td width=\&quot;14%\&quot;&gt;&lt;/td&gt;&apos;;
+        }
+    }
+    $.each(data,function(i,v){
+        var classNode=v.classNode-1;
+        var weekNode=v.week-1;
+        var className;
+        var a=v.courseContent.length
+        switch(true){
+            case 21:
+            className=&apos;two&apos;;
+               break;
+        }
+        jieArray[classNode][weekNode]=&quot;&lt;td width=\&quot;14%\&quot; rowspan=\&quot;&quot;+ v.classHourLength+&quot;\&quot; class=\&quot;&quot;+className+&quot;\&quot;&gt;&quot;+ v.courseContent+&quot;&lt;/td&gt;&quot;;
+          for(var k=1;k&lt;v.classHourLength;k++){
+            jieArray[classNode+k][weekNode]=&quot;&quot;;
+        }
+    });
+    for(i=0;i&lt;11;i++){
+        charArray[i]=&quot;&lt;tr&gt;&lt;td width=\&quot;2%\&quot;&gt;第&quot;+(i+1)+&quot;节&lt;/td&gt;&quot;+jieArray[i].join(&apos; &apos;)+&quot;&lt;/td&gt;&quot;;
+    }
+    $(&quot;#classTable&quot;).html(charArray.join(&apos;&apos;));
+})
+</code></pre><p>####5. 弹性菜单封装</p>
+<p>####6. 移动端调试<br>  在我以为所以的工作都完成就等发布到服务器时，大boss才来临。<br>  手机里的界面真是没眼看……<br>  而且不同手机显示的界面不一样，不同浏览器显示的界面也不一样，要哭了好嘛。</p>
+<blockquote>
+<p>但问题既然存在就要解决</p>
+</blockquote>
+<ul>
+<li>#####远程调试工具caddy.exe<br>电脑和手机在同一个网域（连同一个wifi）就可以在手机查看效果啦</li>
+<li><p>#####添加头部meta标签</p>
+<pre><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0, maximum-scale=1, user-scalable=no&quot;/&gt;
+</code></pre></li>
+</ul>
+<ul>
+<li>#####将所有的px都改成rem并使用@media</li>
+<li>#####css背景固定属性background-attachment:fixed在手机端不起作用<pre><code>解决：hack一下
+想在哪个标签加背景，可以在它class后:before.
+body:before {
+      content: &apos; &apos;;
+      position: fixed;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: url(path/to/image) center 0 no-repeat;
+      background-size: cover;
+}
+</code></pre></li>
+<li><p>######一个更换背景图片的皮肤按钮（position:fixed;）在微信里打开木有显示，但是用魅族自带浏览器打开可以显示，舍友手机微信打开也可显示。</p>
+<pre><code>暂时无解。
+</code></pre><hr>
+</li>
+</ul>
+<blockquote>
+<p>历时半个月的微课表终于接近尾声啦<br><br> 虽然是一个小小的课表，还是感觉收获很多。<br> 我的第一个小小项目，耶。<br><br> 从页面设计到颜色搭配到页面实现到数据交互，从sunlime text 到webstrom到caddy（额，当然这个到代表的过程只有我自己能理解=。=）,<br> 感觉自己在慢慢成长，嗯，这就够啦。<br><br> 开心就好。<br><br> 我就是我，是颜色不一样的小猪。<br></p>
+</blockquote>
+<p> 代码之后会上传到github.</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-git" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
