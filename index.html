@@ -208,7 +208,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="1-获取文本长度"><a href="#1-获取文本长度" class="headerlink" title="1. 获取文本长度"></a>1. 获取文本长度</h4><pre><code>var a = $(this).context.innerText.length;
+        <blockquote>
+<p>历时半个月的微课表终于接近尾声啦<br><br> 虽然是一个小小的课表，还是感觉收获很多。<br> 我的第一个小小项目，耶。<br><br> 从页面设计到颜色搭配到页面实现到数据交互，从sunlime text 到webstrom到caddy（额，当然这个到代表的过程只有我自己能理解=。=）,<br> 感觉自己在慢慢成长，嗯，这就够啦。<br><br> 开心就好。<br><br> 我就是我，是颜色不一样的小猪。<br></p>
+</blockquote>
+<hr>
+<h4 id="1-获取文本长度"><a href="#1-获取文本长度" class="headerlink" title="1. 获取文本长度"></a>1. 获取文本长度</h4><pre><code>var a = $(this).context.innerText.length;
 </code></pre><h4 id="2-改变表格第一列样式"><a href="#2-改变表格第一列样式" class="headerlink" title="2. 改变表格第一列样式"></a>2. 改变表格第一列样式</h4><pre><code>$(&quot;tr&quot;).each(function(){
        $(this).find(&quot;td&quot;).first().css(&quot;color&quot;,&quot;black&quot;);
        });
@@ -252,40 +256,7 @@ if(tem!=null){
     }
     $(&quot;#classTable&quot;).html(charArray.join(&apos;&apos;));
 })
-</code></pre><h4 id="5-弹性菜单封装"><a href="#5-弹性菜单封装" class="headerlink" title="5. 弹性菜单封装"></a>5. 弹性菜单封装</h4><h4 id="6-移动端调试"><a href="#6-移动端调试" class="headerlink" title="6. 移动端调试"></a>6. 移动端调试</h4><p>  在我以为所以的工作都完成就等发布到服务器时，大boss才来临。<br>  手机里的界面真是没眼看……<br>  而且不同手机显示的界面不一样，不同浏览器显示的界面也不一样，要哭了好嘛。</p>
-<blockquote>
-<p>但问题既然存在就要解决</p>
-</blockquote>
-<ul>
-<li><h5 id="远程调试工具caddy-exe"><a href="#远程调试工具caddy-exe" class="headerlink" title="远程调试工具caddy.exe"></a>远程调试工具caddy.exe</h5>电脑和手机在同一个网域（连同一个wifi）就可以在手机查看效果啦</li>
-<li><h5 id="添加头部meta标签"><a href="#添加头部meta标签" class="headerlink" title="添加头部meta标签"></a>添加头部meta标签</h5><pre><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0, maximum-scale=1, user-scalable=no&quot;/&gt;
-</code></pre></li>
-</ul>
-<ul>
-<li><h5 id="将所有的px都改成rem并使用-media"><a href="#将所有的px都改成rem并使用-media" class="headerlink" title="将所有的px都改成rem并使用@media"></a>将所有的px都改成rem并使用@media</h5></li>
-<li><h5 id="css背景固定属性background-attachment-fixed在手机端不起作用"><a href="#css背景固定属性background-attachment-fixed在手机端不起作用" class="headerlink" title="css背景固定属性background-attachment:fixed在手机端不起作用"></a>css背景固定属性background-attachment:fixed在手机端不起作用</h5><pre><code>解决：hack一下
-想在哪个标签加背景，可以在它class后:before.
-body:before {
-      content: &apos; &apos;;
-      position: fixed;
-      z-index: -1;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background: url(path/to/image) center 0 no-repeat;
-      background-size: cover;
-}
-</code></pre></li>
-<li><h6 id="一个更换背景图片的皮肤按钮（position-fixed-）在微信里打开木有显示，但是用魅族自带浏览器打开可以显示，舍友手机微信打开也可显示。"><a href="#一个更换背景图片的皮肤按钮（position-fixed-）在微信里打开木有显示，但是用魅族自带浏览器打开可以显示，舍友手机微信打开也可显示。" class="headerlink" title="一个更换背景图片的皮肤按钮（position:fixed;）在微信里打开木有显示，但是用魅族自带浏览器打开可以显示，舍友手机微信打开也可显示。"></a>一个更换背景图片的皮肤按钮（position:fixed;）在微信里打开木有显示，但是用魅族自带浏览器打开可以显示，舍友手机微信打开也可显示。</h6><pre><code>暂时无解。
-</code></pre><hr>
-</li>
-</ul>
-<blockquote>
-<p>历时半个月的微课表终于接近尾声啦<br><br> 虽然是一个小小的课表，还是感觉收获很多。<br> 我的第一个小小项目，耶。<br><br> 从页面设计到颜色搭配到页面实现到数据交互，从sunlime text 到webstrom到caddy（额，当然这个到代表的过程只有我自己能理解=。=）,<br> 感觉自己在慢慢成长，嗯，这就够啦。<br><br> 开心就好。<br><br> 我就是我，是颜色不一样的小猪。<br></p>
-</blockquote>
-<p> 代码之后会上传到github.</p>
-
+</code></pre>
       
     </div>
     
@@ -298,6 +269,10 @@ body:before {
 
       
 
+      
+        <p class="article-more-link">
+          <a  href="/2016/04/02/timetable/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-02T08:07:46.508Z</updated>
+  <updated>2016-04-02T08:23:48.732Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,9 +20,13 @@
     <link href="http://yoursite.com/2016/04/02/timetable/"/>
     <id>http://yoursite.com/2016/04/02/timetable/</id>
     <published>2016-04-02T07:08:37.000Z</published>
-    <updated>2016-04-02T08:07:46.508Z</updated>
+    <updated>2016-04-02T08:23:48.732Z</updated>
     
-    <content type="html">&lt;h4 id=&quot;1-获取文本长度&quot;&gt;&lt;a href=&quot;#1-获取文本长度&quot; class=&quot;headerlink&quot; title=&quot;1. 获取文本长度&quot;&gt;&lt;/a&gt;1. 获取文本长度&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;var a = $(this).context.innerText.length;
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;历时半个月的微课表终于接近尾声啦&lt;br&gt;&lt;br&gt; 虽然是一个小小的课表，还是感觉收获很多。&lt;br&gt; 我的第一个小小项目，耶。&lt;br&gt;&lt;br&gt; 从页面设计到颜色搭配到页面实现到数据交互，从sunlime text 到webstrom到caddy（额，当然这个到代表的过程只有我自己能理解=。=）,&lt;br&gt; 感觉自己在慢慢成长，嗯，这就够啦。&lt;br&gt;&lt;br&gt; 开心就好。&lt;br&gt;&lt;br&gt; 我就是我，是颜色不一样的小猪。&lt;br&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;1-获取文本长度&quot;&gt;&lt;a href=&quot;#1-获取文本长度&quot; class=&quot;headerlink&quot; title=&quot;1. 获取文本长度&quot;&gt;&lt;/a&gt;1. 获取文本长度&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;var a = $(this).context.innerText.length;
 &lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&quot;2-改变表格第一列样式&quot;&gt;&lt;a href=&quot;#2-改变表格第一列样式&quot; class=&quot;headerlink&quot; title=&quot;2. 改变表格第一列样式&quot;&gt;&lt;/a&gt;2. 改变表格第一列样式&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;$(&amp;quot;tr&amp;quot;).each(function(){
        $(this).find(&amp;quot;td&amp;quot;).first().css(&amp;quot;color&amp;quot;,&amp;quot;black&amp;quot;);
        });
@@ -66,20 +70,19 @@ if(tem!=null){
     }
     $(&amp;quot;#classTable&amp;quot;).html(charArray.join(&amp;apos;&amp;apos;));
 })
-&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&quot;5-弹性菜单封装&quot;&gt;&lt;a href=&quot;#5-弹性菜单封装&quot; class=&quot;headerlink&quot; title=&quot;5. 弹性菜单封装&quot;&gt;&lt;/a&gt;5. 弹性菜单封装&lt;/h4&gt;&lt;h4 id=&quot;6-移动端调试&quot;&gt;&lt;a href=&quot;#6-移动端调试&quot; class=&quot;headerlink&quot; title=&quot;6. 移动端调试&quot;&gt;&lt;/a&gt;6. 移动端调试&lt;/h4&gt;&lt;p&gt;  在我以为所以的工作都完成就等发布到服务器时，大boss才来临。&lt;br&gt;  手机里的界面真是没眼看……&lt;br&gt;  而且不同手机显示的界面不一样，不同浏览器显示的界面也不一样，要哭了好嘛。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;但问题既然存在就要解决&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h4 id=&quot;5-弹性菜单封装&quot;&gt;&lt;a href=&quot;#5-弹性菜单封装&quot; class=&quot;headerlink&quot; title=&quot;5. 弹性菜单封装&quot;&gt;&lt;/a&gt;5. 弹性菜单封装&lt;/h4&gt;&lt;h4 id=&quot;6-移动端调试&quot;&gt;&lt;a href=&quot;#6-移动端调试&quot; class=&quot;headerlink&quot; title=&quot;6. 移动端调试&quot;&gt;&lt;/a&gt;6. 移动端调试&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;在我以为所以的工作都完成就等发布到服务器时，大boss才来临。&lt;br&gt;  手机里的界面真是没眼看……&lt;br&gt;  而且不同手机显示的界面不一样，不同浏览器显示的界面也不一样，要哭了好嘛。&lt;br&gt;&lt;br&gt;  但问题既然存在就要解决&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;h5 id=&quot;远程调试工具caddy-exe&quot;&gt;&lt;a href=&quot;#远程调试工具caddy-exe&quot; class=&quot;headerlink&quot; title=&quot;远程调试工具caddy.exe&quot;&gt;&lt;/a&gt;远程调试工具caddy.exe&lt;/h5&gt;电脑和手机在同一个网域（连同一个wifi）就可以在手机查看效果啦&lt;/li&gt;
-&lt;li&gt;&lt;h5 id=&quot;添加头部meta标签&quot;&gt;&lt;a href=&quot;#添加头部meta标签&quot; class=&quot;headerlink&quot; title=&quot;添加头部meta标签&quot;&gt;&lt;/a&gt;添加头部meta标签&lt;/h5&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width,initial-scale=1.0, maximum-scale=1, user-scalable=no&amp;quot;/&amp;gt;
+&lt;li&gt;&lt;h5 id=&quot;添加头部meta标签&quot;&gt;&lt;a href=&quot;#添加头部meta标签&quot; class=&quot;headerlink&quot; title=&quot;添加头部meta标签&quot;&gt;&lt;/a&gt;添加头部meta标签&lt;/h5&gt;&lt;pre&gt;&lt;code&gt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width,initial-scale=1.0, maximum-scale=1, user-scalable=no&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;h5 id=&quot;将所有的px都改成rem并使用-media&quot;&gt;&lt;a href=&quot;#将所有的px都改成rem并使用-media&quot; class=&quot;headerlink&quot; title=&quot;将所有的px都改成rem并使用@media&quot;&gt;&lt;/a&gt;将所有的px都改成rem并使用@media&lt;/h5&gt;&lt;/li&gt;
-&lt;li&gt;&lt;h5 id=&quot;css背景固定属性background-attachment-fixed在手机端不起作用&quot;&gt;&lt;a href=&quot;#css背景固定属性background-attachment-fixed在手机端不起作用&quot; class=&quot;headerlink&quot; title=&quot;css背景固定属性background-attachment:fixed在手机端不起作用&quot;&gt;&lt;/a&gt;css背景固定属性background-attachment:fixed在手机端不起作用&lt;/h5&gt;&lt;pre&gt;&lt;code&gt;解决：hack一下
-想在哪个标签加背景，可以在它class后:before.
-body:before {
+&lt;li&gt;&lt;h5 id=&quot;css背景固定属性background-attachment-fixed在手机端不起作用&quot;&gt;&lt;a href=&quot;#css背景固定属性background-attachment-fixed在手机端不起作用&quot; class=&quot;headerlink&quot; title=&quot;css背景固定属性background-attachment:fixed在手机端不起作用&quot;&gt;&lt;/a&gt;css背景固定属性background-attachment:fixed在手机端不起作用&lt;/h5&gt;&lt;p&gt;解决：hack一下。想在哪个标签加背景，可以在它class后:before.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;body:before {
       content: &amp;apos; &amp;apos;;
       position: fixed;
       z-index: -1;
@@ -93,17 +96,62 @@ body:before {
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;h6 id=&quot;一个更换背景图片的皮肤按钮（position-fixed-）在微信里打开木有显示，但是用魅族自带浏览器打开可以显示，舍友手机微信打开也可显示。&quot;&gt;&lt;a href=&quot;#一个更换背景图片的皮肤按钮（position-fixed-）在微信里打开木有显示，但是用魅族自带浏览器打开可以显示，舍友手机微信打开也可显示。&quot; class=&quot;headerlink&quot; title=&quot;一个更换背景图片的皮肤按钮（position:fixed;）在微信里打开木有显示，但是用魅族自带浏览器打开可以显示，舍友手机微信打开也可显示。&quot;&gt;&lt;/a&gt;一个更换背景图片的皮肤按钮（position:fixed;）在微信里打开木有显示，但是用魅族自带浏览器打开可以显示，舍友手机微信打开也可显示。&lt;/h6&gt;&lt;pre&gt;&lt;code&gt;暂时无解。
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;p&gt;代码之后会上传到github.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;历时半个月的微课表终于接近尾声啦&lt;br&gt;&lt;br&gt; 虽然是一个小小的课表，还是感觉收获很多。&lt;br&gt; 我的第一个小小项目，耶。&lt;br&gt;&lt;br&gt; 从页面设计到颜色搭配到页面实现到数据交互，从sunlime text 到webstrom到caddy（额，当然这个到代表的过程只有我自己能理解=。=）,&lt;br&gt; 感觉自己在慢慢成长，嗯，这就够啦。&lt;br&gt;&lt;br&gt; 开心就好。&lt;br&gt;&lt;br&gt; 我就是我，是颜色不一样的小猪。&lt;br&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt; 代码之后会上传到github.&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;h4 id=&quot;1-获取文本长度&quot;&gt;&lt;a href=&quot;#1-获取文本长度&quot; class=&quot;headerlink&quot; title=&quot;1. 获取文本长度&quot;&gt;&lt;/a&gt;1. 获取文本长度&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;var a = $(this).context.innerText.le
+      &lt;blockquote&gt;
+&lt;p&gt;历时半个月的微课表终于接近尾声啦&lt;br&gt;&lt;br&gt; 虽然是一个小小的课表，还是感觉收获很多。&lt;br&gt; 我的第一个小小项目，耶。&lt;br&gt;&lt;br&gt; 从页面设计到颜色搭配到页面实现到数据交互，从sunlime text 到webstrom到caddy（额，当然这个到代表的过程只有我自己能理解=。=）,&lt;br&gt; 感觉自己在慢慢成长，嗯，这就够啦。&lt;br&gt;&lt;br&gt; 开心就好。&lt;br&gt;&lt;br&gt; 我就是我，是颜色不一样的小猪。&lt;br&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;1-获取文本长度&quot;&gt;&lt;a href=&quot;#1-获取文本长度&quot; class=&quot;headerlink&quot; title=&quot;1. 获取文本长度&quot;&gt;&lt;/a&gt;1. 获取文本长度&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;var a = $(this).context.innerText.length;
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&quot;2-改变表格第一列样式&quot;&gt;&lt;a href=&quot;#2-改变表格第一列样式&quot; class=&quot;headerlink&quot; title=&quot;2. 改变表格第一列样式&quot;&gt;&lt;/a&gt;2. 改变表格第一列样式&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;$(&amp;quot;tr&amp;quot;).each(function(){
+       $(this).find(&amp;quot;td&amp;quot;).first().css(&amp;quot;color&amp;quot;,&amp;quot;black&amp;quot;);
+       });
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&quot;3-点击图片更换背景并用cookie保存&quot;&gt;&lt;a href=&quot;#3-点击图片更换背景并用cookie保存&quot; class=&quot;headerlink&quot; title=&quot;3. 点击图片更换背景并用cookie保存&quot;&gt;&lt;/a&gt;3. 点击图片更换背景并用cookie保存&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;$(&amp;quot;.gooey-menu-item&amp;quot;).click(function(){
+    var temp=$(this).css(&amp;apos;backgroundImage&amp;apos;);   
+    var strArr = temp.split(&amp;apos;/&amp;apos;);
+        var tem=strArr[strArr.length-1].substring(0,strArr[strArr.length-1].length-2);//获取到图片名
+    $(&amp;quot;.blacktab&amp;quot;).css({&amp;quot;backgroundImage&amp;quot;:&amp;quot;url(&amp;quot;+tem+&amp;quot;)&amp;quot;})
+    $.cookie(&amp;quot;background&amp;quot;,tem,{expires:7});
+});
+var tem=$.cookie(&amp;quot;background&amp;quot;);
+if(tem!=null){
+    $(&amp;quot;.blacktab&amp;quot;).css({&amp;quot;backgroundImage&amp;quot;:&amp;quot;url(&amp;quot;+tem+&amp;quot;)&amp;quot;})
+ }
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&quot;4-与后台数据交互&quot;&gt;&lt;a href=&quot;#4-与后台数据交互&quot; class=&quot;headerlink&quot; title=&quot;4. 与后台数据交互&quot;&gt;&lt;/a&gt;4. 与后台数据交互&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;$.getJSON(&amp;apos;callback.js&amp;apos;,function(data){
+    var jieArray=new Array();
+    var charArray=new Array(11);
+    for(var i=0;i&amp;lt;11;i++){
+        jieArray[i]=new Array();
+        for(var j=0;j&amp;lt;7;j++){
+            jieArray[i][j]=&amp;apos;&amp;lt;td width=\&amp;quot;14%\&amp;quot;&amp;gt;&amp;lt;/td&amp;gt;&amp;apos;;
+        }
+    }
+    $.each(data,function(i,v){
+        var classNode=v.classNode-1;
+        var weekNode=v.week-1;
+        var className;
+        var a=v.courseContent.length
+        switch(true){
+            case 21:
+            className=&amp;apos;two&amp;apos;;
+               break;
+        }
+        jieArray[classNode][weekNode]=&amp;quot;&amp;lt;td width=\&amp;quot;14%\&amp;quot; rowspan=\&amp;quot;&amp;quot;+ v.classHourLength+&amp;quot;\&amp;quot; class=\&amp;quot;&amp;quot;+className+&amp;quot;\&amp;quot;&amp;gt;&amp;quot;+ v.courseContent+&amp;quot;&amp;lt;/td&amp;gt;&amp;quot;;
+          for(var k=1;k&amp;lt;v.classHourLength;k++){
+            jieArray[classNode+k][weekNode]=&amp;quot;&amp;quot;;
+        }
+    });
+    for(i=0;i&amp;lt;11;i++){
+        charArray[i]=&amp;quot;&amp;lt;tr&amp;gt;&amp;lt;td width=\&amp;quot;2%\&amp;quot;&amp;gt;第&amp;quot;+(i+1)+&amp;quot;节&amp;lt;/td&amp;gt;&amp;quot;+jieArray[i].join(&amp;apos; &amp;apos;)+&amp;quot;&amp;lt;/td&amp;gt;&amp;quot;;
+    }
+    $(&amp;quot;#classTable&amp;quot;).html(charArray.join(&amp;apos;&amp;apos;));
+})
+&lt;/code&gt;&lt;/pre&gt;
     
     </summary>
     
