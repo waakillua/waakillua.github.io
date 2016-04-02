@@ -77,7 +77,7 @@
 						<li>Links</li>
 						
 						
-						<li>Über</li>
+						<li>About</li>
 						
 					</ul>
 				</div>
@@ -110,7 +110,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a>
+						<a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/实习/" style="font-size: 10px;">实习</a>
 					</div>
 				</section>
 				
@@ -186,7 +186,7 @@
   
     <div class="article-meta">
       <a href="/2016/04/02/timetable/" class="article-date">
-  	<time datetime="2016-04-02T07:08:37.861Z" itemprop="datePublished">2016-04-02</time>
+  	<time datetime="2016-04-02T07:08:37.000Z" itemprop="datePublished">2016-04-02</time>
 </a>
     </div>
   
@@ -195,14 +195,24 @@
       <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/02/timetable/">微课表小结</a>
+    </h1>
+  
+
+      </header>
+      
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <hr>
-<p>title: 微课表小结<br>date: 2016-04-02 15:08:37<br>tags:<br>—前端</p>
-<p>####1. 获取文本长度<br>     var a = $(this).context.innerText.length;</p>
-<p>####2. 改变表格第一列样式<br>    $(“tr”).each(function(){<br>           $(this).find(“td”).first().css(“color”,”black”);<br>           });</p>
-<p>####3. 点击图片更换背景并用cookie保存</p>
-<pre><code>$(&quot;.gooey-menu-item&quot;).click(function(){
+        <h4 id="1-获取文本长度"><a href="#1-获取文本长度" class="headerlink" title="1. 获取文本长度"></a>1. 获取文本长度</h4><pre><code>var a = $(this).context.innerText.length;
+</code></pre><h4 id="2-改变表格第一列样式"><a href="#2-改变表格第一列样式" class="headerlink" title="2. 改变表格第一列样式"></a>2. 改变表格第一列样式</h4><pre><code>$(&quot;tr&quot;).each(function(){
+       $(this).find(&quot;td&quot;).first().css(&quot;color&quot;,&quot;black&quot;);
+       });
+</code></pre><h4 id="3-点击图片更换背景并用cookie保存"><a href="#3-点击图片更换背景并用cookie保存" class="headerlink" title="3. 点击图片更换背景并用cookie保存"></a>3. 点击图片更换背景并用cookie保存</h4><pre><code>$(&quot;.gooey-menu-item&quot;).click(function(){
     var temp=$(this).css(&apos;backgroundImage&apos;);   
     var strArr = temp.split(&apos;/&apos;);
         var tem=strArr[strArr.length-1].substring(0,strArr[strArr.length-1].length-2);//获取到图片名
@@ -213,8 +223,7 @@ var tem=$.cookie(&quot;background&quot;);
 if(tem!=null){
     $(&quot;.blacktab&quot;).css({&quot;backgroundImage&quot;:&quot;url(&quot;+tem+&quot;)&quot;})
  }
-</code></pre><p>####4. 与后台数据交互</p>
-<pre><code>$.getJSON(&apos;callback.js&apos;,function(data){
+</code></pre><h4 id="4-与后台数据交互"><a href="#4-与后台数据交互" class="headerlink" title="4. 与后台数据交互"></a>4. 与后台数据交互</h4><pre><code>$.getJSON(&apos;callback.js&apos;,function(data){
     var jieArray=new Array();
     var charArray=new Array(11);
     for(var i=0;i&lt;11;i++){
@@ -243,20 +252,18 @@ if(tem!=null){
     }
     $(&quot;#classTable&quot;).html(charArray.join(&apos;&apos;));
 })
-</code></pre><p>####5. 弹性菜单封装</p>
-<p>####6. 移动端调试<br>  在我以为所以的工作都完成就等发布到服务器时，大boss才来临。<br>  手机里的界面真是没眼看……<br>  而且不同手机显示的界面不一样，不同浏览器显示的界面也不一样，要哭了好嘛。</p>
+</code></pre><h4 id="5-弹性菜单封装"><a href="#5-弹性菜单封装" class="headerlink" title="5. 弹性菜单封装"></a>5. 弹性菜单封装</h4><h4 id="6-移动端调试"><a href="#6-移动端调试" class="headerlink" title="6. 移动端调试"></a>6. 移动端调试</h4><p>  在我以为所以的工作都完成就等发布到服务器时，大boss才来临。<br>  手机里的界面真是没眼看……<br>  而且不同手机显示的界面不一样，不同浏览器显示的界面也不一样，要哭了好嘛。</p>
 <blockquote>
 <p>但问题既然存在就要解决</p>
 </blockquote>
 <ul>
-<li>#####远程调试工具caddy.exe<br>电脑和手机在同一个网域（连同一个wifi）就可以在手机查看效果啦</li>
-<li><p>#####添加头部meta标签</p>
-<pre><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0, maximum-scale=1, user-scalable=no&quot;/&gt;
+<li><h5 id="远程调试工具caddy-exe"><a href="#远程调试工具caddy-exe" class="headerlink" title="远程调试工具caddy.exe"></a>远程调试工具caddy.exe</h5>电脑和手机在同一个网域（连同一个wifi）就可以在手机查看效果啦</li>
+<li><h5 id="添加头部meta标签"><a href="#添加头部meta标签" class="headerlink" title="添加头部meta标签"></a>添加头部meta标签</h5><pre><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0, maximum-scale=1, user-scalable=no&quot;/&gt;
 </code></pre></li>
 </ul>
 <ul>
-<li>#####将所有的px都改成rem并使用@media</li>
-<li>#####css背景固定属性background-attachment:fixed在手机端不起作用<pre><code>解决：hack一下
+<li><h5 id="将所有的px都改成rem并使用-media"><a href="#将所有的px都改成rem并使用-media" class="headerlink" title="将所有的px都改成rem并使用@media"></a>将所有的px都改成rem并使用@media</h5></li>
+<li><h5 id="css背景固定属性background-attachment-fixed在手机端不起作用"><a href="#css背景固定属性background-attachment-fixed在手机端不起作用" class="headerlink" title="css背景固定属性background-attachment:fixed在手机端不起作用"></a>css背景固定属性background-attachment:fixed在手机端不起作用</h5><pre><code>解决：hack一下
 想在哪个标签加背景，可以在它class后:before.
 body:before {
       content: &apos; &apos;;
@@ -270,8 +277,7 @@ body:before {
       background-size: cover;
 }
 </code></pre></li>
-<li><p>######一个更换背景图片的皮肤按钮（position:fixed;）在微信里打开木有显示，但是用魅族自带浏览器打开可以显示，舍友手机微信打开也可显示。</p>
-<pre><code>暂时无解。
+<li><h6 id="一个更换背景图片的皮肤按钮（position-fixed-）在微信里打开木有显示，但是用魅族自带浏览器打开可以显示，舍友手机微信打开也可显示。"><a href="#一个更换背景图片的皮肤按钮（position-fixed-）在微信里打开木有显示，但是用魅族自带浏览器打开可以显示，舍友手机微信打开也可显示。" class="headerlink" title="一个更换背景图片的皮肤按钮（position:fixed;）在微信里打开木有显示，但是用魅族自带浏览器打开可以显示，舍友手机微信打开也可显示。"></a>一个更换背景图片的皮肤按钮（position:fixed;）在微信里打开木有显示，但是用魅族自带浏览器打开可以显示，舍友手机微信打开也可显示。</h6><pre><code>暂时无解。
 </code></pre><hr>
 </li>
 </ul>
@@ -286,6 +292,10 @@ body:before {
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/实习/">实习</a></li></ul>
+	</div>
+
       
 
       
