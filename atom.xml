@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-30T06:44:59.229Z</updated>
+  <updated>2016-04-30T06:51:39.015Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,10 +20,10 @@
     <link href="http://yoursite.com/2016/04/30/respinsive-web-design/"/>
     <id>http://yoursite.com/2016/04/30/respinsive-web-design/</id>
     <published>2016-04-30T06:16:35.000Z</published>
-    <updated>2016-04-30T06:44:59.229Z</updated>
+    <updated>2016-04-30T06:51:39.015Z</updated>
     
     <content type="html">&lt;blockquote&gt;
-&lt;p&gt;做课表的时候，页面需要做成响应式的，当时也不知道响应式是个什么东西，适配不同手机屏幕大小基本上都是用媒体查询和rem实现的。然后就找了这本《相应式Web设计——HTML5和CSS3实战》来读，这篇是读完后写的笔记，用做备忘。算是对响应式有了一个全面地了解了吧。&lt;/p&gt;
+&lt;p&gt;做课表的时候，页面需要做成响应式的，当时也不知道响应式是个什么东西，适配不同手机屏幕大小基本上都是用媒体查询和rem实现的。然后就找了这本《相应式Web设计——HTML5和CSS3实战》来读，这篇是读完后写的笔记，用做备忘。算是对响应式有了一个全面地了解了吧。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;将已有的开发技巧（弹性网格布局，弹性图片，媒体和媒体查询）整合起来。&lt;br&gt;首先针对小屏幕进行设计，然后逐步增强针对大屏幕的设计和内容。&lt;/p&gt;
@@ -43,10 +43,11 @@
 &lt;li&gt;&lt;p&gt;字体&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;弹性图片  &lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;- 让图片随视口缩放 img{max-width:100%;}  
-- 为特定图片指定特定规则 
-- 给弹性图片设置阈值 img{max-width:200px;} 
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt; 自适应图片&lt;/strong&gt; p62&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- 让图片随视口缩放 img{max-width:100%;}
+- 为特定图片指定特定规则
+- 给弹性图片设置阈值 img{max-width:200px;}
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;自适应图片 p62&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;css网格系统快速搭建网站&lt;/p&gt;
 &lt;/li&gt;
@@ -75,8 +76,16 @@
 &lt;/li&gt;
 &lt;li&gt;在HTML5中嵌入媒体&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;响应式视频&lt;/p&gt;
-  &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;   video&amp;#123;max-width:100%;height:auto;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    ```它不能解决用iframe嵌入的视频的响应式问题&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;- 离线web应用&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;### CSS3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;- 私有前缀&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;  -webkit-transform:rotate(-3deg); /&lt;em&gt;为Chrome/Safari&lt;/em&gt;/&lt;br&gt;  -moz-transform:rotate(-3deg); /&lt;em&gt;为Firefox&lt;/em&gt;/&lt;br&gt;  -ms-transform:rotate(-3deg); /&lt;em&gt;为IE&lt;/em&gt;/&lt;br&gt;  -o-transform:rotate(-3deg); /&lt;em&gt;为Opera&lt;/em&gt;/&lt;br&gt;```&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;video{max-width:100%;height:auto;} 它不能解决用iframe嵌入的视频的响应式问题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;离线web应用&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;CSS3&quot;&gt;&lt;a href=&quot;#CSS3&quot; class=&quot;headerlink&quot; title=&quot;CSS3&quot;&gt;&lt;/a&gt;CSS3&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;私有前缀&lt;/p&gt;
+  &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;-webkit-transform:rotate(-3deg); /*为Chrome/Safari*/  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;-moz-transform:rotate(-3deg); /*为Firefox*/ &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;-ms-transform:rotate(-3deg); /*为IE*/ &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;-o-transform:rotate(-3deg); /*为Opera*/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://caniuse.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;当前浏览器对特定CSS3和HTML5的支持程度&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -97,7 +106,7 @@
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;做课表的时候，页面需要做成响应式的，当时也不知道响应式是个什么东西，适配不同手机屏幕大小基本上都是用媒体查询和rem实现的。然后就找了这本《相应式Web设计——HTML5和CSS3实战》来读，这篇是读完后写的笔记，用做备忘。算是对响应式有了一个全面
+&lt;p&gt;做课表的时候，页面需要做成响应式的，当时也不知道响应式是个什么东西，适配不同手机屏幕大小基本上都是用媒体查询和rem实现的。然后就找了这本《相应式Web设计——HTML5和CSS3实战》来读，这篇是读完后写的笔记，用做备忘。算是对响应式有了一个全面地了解了吧。&lt;br&gt;
     
     </summary>
     
