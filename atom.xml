@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-30T06:51:39.015Z</updated>
+  <updated>2016-04-30T06:53:36.649Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2016/04/30/respinsive-web-design/"/>
     <id>http://yoursite.com/2016/04/30/respinsive-web-design/</id>
     <published>2016-04-30T06:16:35.000Z</published>
-    <updated>2016-04-30T06:51:39.015Z</updated>
+    <updated>2016-04-30T06:53:36.649Z</updated>
     
     <content type="html">&lt;blockquote&gt;
 &lt;p&gt;做课表的时候，页面需要做成响应式的，当时也不知道响应式是个什么东西，适配不同手机屏幕大小基本上都是用媒体查询和rem实现的。然后就找了这本《相应式Web设计——HTML5和CSS3实战》来读，这篇是读完后写的笔记，用做备忘。算是对响应式有了一个全面地了解了吧。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -42,11 +42,12 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;字体&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;弹性图片  &lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;- 让图片随视口缩放 img{max-width:100%;}
-- 为特定图片指定特定规则
-- 给弹性图片设置阈值 img{max-width:200px;}
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;弹性图片&lt;ul&gt;
+&lt;li&gt;让图片随视口缩放 img{max-width:100%;}&lt;/li&gt;
+&lt;li&gt;为特定图片指定特定规则&lt;/li&gt;
+&lt;li&gt;给弹性图片设置阈值 img{max-width:200px;}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;自适应图片 p62&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;css网格系统快速搭建网站&lt;/p&gt;
