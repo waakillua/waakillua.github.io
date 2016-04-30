@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>响应式Web设计 | Wakillua&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="做课表的时候，页面需要做成响应式的，当时也不知道响应式是个什么东西，适配不同手机屏幕大小基本上都是用媒体查询和rem实现的。然后就找了这本《相应式Web设计——HTML5和CSS3实战》来读，这篇是读完后写的笔记，用做备忘。算是对响应式有了一个全面地了解了吧。
+
+定义
+将已有的开发技巧（弹性网格布局，弹性图片，媒体和媒体查询）整合起来。首先针对小屏幕进行设计，然后逐步增强针对大屏幕的设计和内容。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="响应式Web设计">
+<meta property="og:url" content="http://yoursite.com/2016/04/30/respinsive-web-design/index.html">
+<meta property="og:site_name" content="Wakillua's blog">
+<meta property="og:description" content="做课表的时候，页面需要做成响应式的，当时也不知道响应式是个什么东西，适配不同手机屏幕大小基本上都是用媒体查询和rem实现的。然后就找了这本《相应式Web设计——HTML5和CSS3实战》来读，这篇是读完后写的笔记，用做备忘。算是对响应式有了一个全面地了解了吧。
+
+定义
+将已有的开发技巧（弹性网格布局，弹性图片，媒体和媒体查询）整合起来。首先针对小屏幕进行设计，然后逐步增强针对大屏幕的设计和内容。">
+<meta property="og:updated_time" content="2016-04-30T06:44:59.229Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="响应式Web设计">
+<meta name="twitter:description" content="做课表的时候，页面需要做成响应式的，当时也不知道响应式是个什么东西，适配不同手机屏幕大小基本上都是用媒体查询和rem实现的。然后就找了这本《相应式Web设计——HTML5和CSS3实战》来读，这篇是读完后写的笔记，用做备忘。算是对响应式有了一个全面地了解了吧。
+
+定义
+将已有的开发技巧（弹性网格布局，弹性图片，媒体和媒体查询）整合起来。首先针对小屏幕进行设计，然后逐步增强针对大屏幕的设计和内容。">
+  
+    <link rel="alternative" href="/atom.xml" title="Wakillua&#39;s blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://7xsc2t.com1.z0.glb.clouddn.com/2.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">wakillua</a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>Menu</li>
+						<li>Tags</li>
+						
+						<li>Links</li>
+						
+						
+						<li>Über</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/waakillua" title="github">github</a>
+					        
+								<a class="mail" target="_blank" href="/waakillua@gmail.com" title="mail">mail</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/响应式/" style="font-size: 10px;">响应式</a> <a href="/tags/实习/" style="font-size: 10px;">实习</a> <a href="/tags/月结/" style="font-size: 20px;">月结</a> <a href="/tags/电影剧集/" style="font-size: 10px;">电影剧集</a> <a href="/tags/阅读/" style="font-size: 10px;">阅读</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://mengxiao.xyz/">湛阳的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://fazero.cc/">fazero的博客</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">用写，顶住忘记。</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">wakillua</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="http://7xsc2t.com1.z0.glb.clouddn.com/2.jpg" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">wakillua</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/waakillua" title="github">github</a>
+			        
+						<a class="mail" target="_blank" href="/waakillua@gmail.com" title="mail">mail</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-respinsive-web-design" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/30/respinsive-web-design/" class="article-date">
+  	<time datetime="2016-04-30T06:16:35.000Z" itemprop="datePublished">2016-04-30</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      响应式Web设计
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/响应式/">响应式</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/阅读/">阅读</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>做课表的时候，页面需要做成响应式的，当时也不知道响应式是个什么东西，适配不同手机屏幕大小基本上都是用媒体查询和rem实现的。然后就找了这本《相应式Web设计——HTML5和CSS3实战》来读，这篇是读完后写的笔记，用做备忘。算是对响应式有了一个全面地了解了吧。</p>
+</blockquote>
+<h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><ul>
+<li><p>将已有的开发技巧（弹性网格布局，弹性图片，媒体和媒体查询）整合起来。<br>首先针对小屏幕进行设计，然后逐步增强针对大屏幕的设计和内容。</p>
+</li>
+<li><p><a href="http://mediaqueri.es" target="_blank" rel="external">响应式设计创意收集网站</a></p>
+</li>
+</ul>
+<h3 id="媒体查询"><a href="#媒体查询" class="headerlink" title="媒体查询"></a>媒体查询</h3><ul>
+<li>建议：在已有的样式表中追加媒体查询样式  </li>
+<li>一个完美的设计，往往在一定程度上适应未来的发展。  </li>
+<li>阻止移动浏览器自动调整页面大小的meta标签<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=“viewport” content=&quot;initial-scale=1.0,width=device-width&quot;/&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="流式布局"><a href="#流式布局" class="headerlink" title="流式布局"></a>流式布局</h3><ul>
+<li><p>将固定布局改为百分比布局<br> 目标元素宽度/上下元素宽度=百分比宽度</p>
+</li>
+<li><p>字体</p>
+</li>
+<li><p>弹性图片  </p>
+<pre><code>- 让图片随视口缩放 img{max-width:100%;}  
+- 为特定图片指定特定规则 
+- 给弹性图片设置阈值 img{max-width:200px;} 
+</code></pre><p><strong> 自适应图片</strong> p62</p>
+</li>
+<li><p>css网格系统快速搭建网站</p>
+</li>
+</ul>
+<h3 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h3><ul>
+<li><p><a href="http://html5boilerplate.com/" target="_blank" rel="external">H5样板文件</a></p>
+</li>
+<li><p>HTML的全新语义化元素</p>
+<ul>
+<li>section 定义文档或应用程序中的区域或节</li>
+<li>nav 定义文档的主导航区域</li>
+<li>article 包裹独立的内容片断(栗子:博客正文)</li>
+<li>aside 表示与页面主内容松散相关的内容(栗子:友情链接)</li>
+<li>hgroup 标题组,只有第一个标题元素进入文档大纲</li>
+<li>header 包含对区域内容的介绍说明</li>
+<li>footer 包含所在区域的辅助信息</li>
+<li>address 明确标注离其最近的article或body祖先元素的联系信息</li>
+</ul>
+</li>
+<li><p>HTML5的文本级语义元素</p>
+<ul>
+<li>b 吸引人注意的小段文本</li>
+<li>em 强调</li>
+<li>i 标明不同特点的元素</li>
+</ul>
+</li>
+<li>在HTML5中嵌入媒体</li>
+<li><p>响应式视频</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">   video&#123;max-width:100%;height:auto;&#125;</span><br><span class="line">    ```它不能解决用iframe嵌入的视频的响应式问题</span><br><span class="line"></span><br><span class="line">- 离线web应用</span><br><span class="line"></span><br><span class="line">### CSS3</span><br><span class="line"></span><br><span class="line">- 私有前缀</span><br></pre></td></tr></table></figure>
+<p>  -webkit-transform:rotate(-3deg); /<em>为Chrome/Safari</em>/<br>  -moz-transform:rotate(-3deg); /<em>为Firefox</em>/<br>  -ms-transform:rotate(-3deg); /<em>为IE</em>/<br>  -o-transform:rotate(-3deg); /<em>为Opera</em>/<br>```</p>
+</li>
+<li><p><a href="http://caniuse.com/" target="_blank" rel="external">当前浏览器对特定CSS3和HTML5的支持程度</a></p>
+</li>
+<li>CSS3技巧<ul>
+<li>多栏布局</li>
+<li>文字换行(url)</li>
+<li>新增选择器</li>
+<li>属性选择器</li>
+<li>结构伪类 :last-child :nth-child(even)交替效果 :not  伪元素p::first-line</li>
+<li>自定义网页字体 @font-face</li>
+<li>阴影 渐变背景</li>
+<li>过渡 变形 动画</li>
+</ul>
+</li>
+</ul>
+<h3 id="用HTML5和CSS3征服表单"><a href="#用HTML5和CSS3征服表单" class="headerlink" title="用HTML5和CSS3征服表单"></a>用HTML5和CSS3征服表单</h3><h3 id="解决跨浏览器问题"><a href="#解决跨浏览器问题" class="headerlink" title="解决跨浏览器问题"></a>解决跨浏览器问题</h3>
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/04/30/April/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">4月小结：有理想才不会变成咸鱼</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="respinsive-web-design" data-title="响应式Web设计" data-url="http://yoursite.com/2016/04/30/respinsive-web-design/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"waakillua"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 wakillua
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>

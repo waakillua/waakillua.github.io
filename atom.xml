@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-30T06:09:01.073Z</updated>
+  <updated>2016-04-30T06:44:59.229Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,99 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>响应式Web设计</title>
+    <link href="http://yoursite.com/2016/04/30/respinsive-web-design/"/>
+    <id>http://yoursite.com/2016/04/30/respinsive-web-design/</id>
+    <published>2016-04-30T06:16:35.000Z</published>
+    <updated>2016-04-30T06:44:59.229Z</updated>
+    
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;做课表的时候，页面需要做成响应式的，当时也不知道响应式是个什么东西，适配不同手机屏幕大小基本上都是用媒体查询和rem实现的。然后就找了这本《相应式Web设计——HTML5和CSS3实战》来读，这篇是读完后写的笔记，用做备忘。算是对响应式有了一个全面地了解了吧。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;将已有的开发技巧（弹性网格布局，弹性图片，媒体和媒体查询）整合起来。&lt;br&gt;首先针对小屏幕进行设计，然后逐步增强针对大屏幕的设计和内容。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://mediaqueri.es&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;响应式设计创意收集网站&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;媒体查询&quot;&gt;&lt;a href=&quot;#媒体查询&quot; class=&quot;headerlink&quot; title=&quot;媒体查询&quot;&gt;&lt;/a&gt;媒体查询&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;建议：在已有的样式表中追加媒体查询样式  &lt;/li&gt;
+&lt;li&gt;一个完美的设计，往往在一定程度上适应未来的发展。  &lt;/li&gt;
+&lt;li&gt;阻止移动浏览器自动调整页面大小的meta标签&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;meta name=“viewport” content=&amp;quot;initial-scale=1.0,width=device-width&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;流式布局&quot;&gt;&lt;a href=&quot;#流式布局&quot; class=&quot;headerlink&quot; title=&quot;流式布局&quot;&gt;&lt;/a&gt;流式布局&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;将固定布局改为百分比布局&lt;br&gt; 目标元素宽度/上下元素宽度=百分比宽度&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;字体&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;弹性图片  &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- 让图片随视口缩放 img{max-width:100%;}  
+- 为特定图片指定特定规则 
+- 给弹性图片设置阈值 img{max-width:200px;} 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt; 自适应图片&lt;/strong&gt; p62&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;css网格系统快速搭建网站&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;HTML5&quot;&gt;&lt;a href=&quot;#HTML5&quot; class=&quot;headerlink&quot; title=&quot;HTML5&quot;&gt;&lt;/a&gt;HTML5&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://html5boilerplate.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;H5样板文件&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;HTML的全新语义化元素&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;section 定义文档或应用程序中的区域或节&lt;/li&gt;
+&lt;li&gt;nav 定义文档的主导航区域&lt;/li&gt;
+&lt;li&gt;article 包裹独立的内容片断(栗子:博客正文)&lt;/li&gt;
+&lt;li&gt;aside 表示与页面主内容松散相关的内容(栗子:友情链接)&lt;/li&gt;
+&lt;li&gt;hgroup 标题组,只有第一个标题元素进入文档大纲&lt;/li&gt;
+&lt;li&gt;header 包含对区域内容的介绍说明&lt;/li&gt;
+&lt;li&gt;footer 包含所在区域的辅助信息&lt;/li&gt;
+&lt;li&gt;address 明确标注离其最近的article或body祖先元素的联系信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;HTML5的文本级语义元素&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;b 吸引人注意的小段文本&lt;/li&gt;
+&lt;li&gt;em 强调&lt;/li&gt;
+&lt;li&gt;i 标明不同特点的元素&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;在HTML5中嵌入媒体&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;响应式视频&lt;/p&gt;
+  &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;   video&amp;#123;max-width:100%;height:auto;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    ```它不能解决用iframe嵌入的视频的响应式问题&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;- 离线web应用&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;### CSS3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;- 私有前缀&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;  -webkit-transform:rotate(-3deg); /&lt;em&gt;为Chrome/Safari&lt;/em&gt;/&lt;br&gt;  -moz-transform:rotate(-3deg); /&lt;em&gt;为Firefox&lt;/em&gt;/&lt;br&gt;  -ms-transform:rotate(-3deg); /&lt;em&gt;为IE&lt;/em&gt;/&lt;br&gt;  -o-transform:rotate(-3deg); /&lt;em&gt;为Opera&lt;/em&gt;/&lt;br&gt;```&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://caniuse.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;当前浏览器对特定CSS3和HTML5的支持程度&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;CSS3技巧&lt;ul&gt;
+&lt;li&gt;多栏布局&lt;/li&gt;
+&lt;li&gt;文字换行(url)&lt;/li&gt;
+&lt;li&gt;新增选择器&lt;/li&gt;
+&lt;li&gt;属性选择器&lt;/li&gt;
+&lt;li&gt;结构伪类 :last-child :nth-child(even)交替效果 :not  伪元素p::first-line&lt;/li&gt;
+&lt;li&gt;自定义网页字体 @font-face&lt;/li&gt;
+&lt;li&gt;阴影 渐变背景&lt;/li&gt;
+&lt;li&gt;过渡 变形 动画&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;用HTML5和CSS3征服表单&quot;&gt;&lt;a href=&quot;#用HTML5和CSS3征服表单&quot; class=&quot;headerlink&quot; title=&quot;用HTML5和CSS3征服表单&quot;&gt;&lt;/a&gt;用HTML5和CSS3征服表单&lt;/h3&gt;&lt;h3 id=&quot;解决跨浏览器问题&quot;&gt;&lt;a href=&quot;#解决跨浏览器问题&quot; class=&quot;headerlink&quot; title=&quot;解决跨浏览器问题&quot;&gt;&lt;/a&gt;解决跨浏览器问题&lt;/h3&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;做课表的时候，页面需要做成响应式的，当时也不知道响应式是个什么东西，适配不同手机屏幕大小基本上都是用媒体查询和rem实现的。然后就找了这本《相应式Web设计——HTML5和CSS3实战》来读，这篇是读完后写的笔记，用做备忘。算是对响应式有了一个全面
+    
+    </summary>
+    
+    
+      <category term="响应式" scheme="http://yoursite.com/tags/%E5%93%8D%E5%BA%94%E5%BC%8F/"/>
+    
+      <category term="阅读" scheme="http://yoursite.com/tags/%E9%98%85%E8%AF%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>4月小结：有理想才不会变成咸鱼</title>
